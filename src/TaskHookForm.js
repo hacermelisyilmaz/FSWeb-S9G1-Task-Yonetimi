@@ -1,6 +1,9 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 export default function TaskHookForm() {
+  const { register, handleSubmit } = useForm();
+
   return (
     <form className="taskForm" onSubmit={handleSubmit}>
       <div className="form-line">
