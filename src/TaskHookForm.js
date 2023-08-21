@@ -16,12 +16,11 @@ export default function TaskHookForm({ kisiler, submitFn }) {
     mode: "onBlur",
   });
 
-  function onSubmit(e) {
-    e.preventDefault();
+  function onSubmit(data) {
     submitFn({
-      /* ...formData,
+      ...data,
       id: nanoid(5),
-      status: "yapılacak", */
+      status: "yapılacak",
     });
   }
 
